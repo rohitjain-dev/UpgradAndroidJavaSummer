@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Dog",
+            "request": "launch",
+            "mainClass": "Dog"
+        }
+    ]
+}
