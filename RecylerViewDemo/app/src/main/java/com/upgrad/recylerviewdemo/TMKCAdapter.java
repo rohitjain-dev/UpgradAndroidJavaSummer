@@ -31,7 +31,7 @@ public class TMKCAdapter extends RecyclerView.Adapter<TMKCAdapter.viewHolder> {
 
     @Override
     public void onBindViewHolder(viewHolder holder, int position) {
-        TMKC mylistData = data[position];
+       // TMKC mylistData = data[position];
         holder.characternameText.setText(data[position].getCharaterName());
         holder.characterTaglineText.setText(data[position].getTagLine());
         holder.characterImage.setImageResource(data[position].getImgID());

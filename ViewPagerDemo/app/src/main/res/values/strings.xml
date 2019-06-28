@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ViewPagerDemo</string>
+    <string name="tab1">Chat</string>
+    <string name="tab2">Status</string>
+    <string name="tab3">Calls</string>
+</resources>
