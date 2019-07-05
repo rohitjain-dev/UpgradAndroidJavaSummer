@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#fafa12"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sampletext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Xyz Login"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/emailedittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"/>
+    <EditText
+        android:id="@+id/passwordedittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"/>
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+
+</LinearLayout>

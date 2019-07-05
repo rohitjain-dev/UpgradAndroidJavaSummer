@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Shared Preferences Example"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        />
+
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone"
+        android:inputType="phone"
+        android:maxLength="10"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        >
+
+        <Button
+            android:id="@+id/btnStore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#29b6f6"
+            android:onClick="Store"
+            android:text="STORE"
+            android:textColor="#fafafa"
+            />
+
+        <Button
+            android:id="@+id/btnFetch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#29b6f6"
+            android:onClick="Fetch"
+            android:text="FETCH"
+            android:textColor="#fafafa"
+            />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#29b6f6"
+            android:onClick="clear"
+            android:text="Clear"
+            android:textColor="#fafafa"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
