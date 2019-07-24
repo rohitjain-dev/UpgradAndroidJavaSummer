@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JavaThreads2",
+            "request": "launch",
+            "mainClass": "JavaThreads2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JavaThreads",
+            "request": "launch",
+            "mainClass": "JavaThreads"
+        }
+    ]
+}
