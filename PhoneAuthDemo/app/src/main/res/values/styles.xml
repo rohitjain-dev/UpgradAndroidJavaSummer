@@ -8,9 +8,4 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-
-    <style name="AppThemeLogin" parent="Theme.AppCompat.Light.NoActionBar">
-
-    </style>
-
 </resources>
