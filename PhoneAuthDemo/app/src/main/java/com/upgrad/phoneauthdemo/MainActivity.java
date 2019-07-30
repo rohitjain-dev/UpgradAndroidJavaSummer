@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 //Todo
                 //We need to get the phone number
                 // send to the firebase auth
