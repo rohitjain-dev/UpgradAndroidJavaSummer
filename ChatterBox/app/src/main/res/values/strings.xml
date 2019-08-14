@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ChatterBox</string>
+    <string name="your_name">Enter Name</string>
+    <string name="your_number">Enter Mobile Number</string>
+    <string name="continue_button">Continue</string>
+    <string name="login_button">Login</string>
+    <string name="enterotp">Enter OTP</string>
 </resources>

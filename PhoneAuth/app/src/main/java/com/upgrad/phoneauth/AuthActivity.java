@@ -31,6 +31,10 @@ public class AuthActivity extends AppCompatActivity {
 
     private PhoneAuthProvider.OnVerificationStateChangedCallbacks mcallbacks;
 
+    private String mverificationID;
+    private PhoneAuthProvider.ForceResendingToken resendingToken;
+
+    //private int buttonType = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +46,7 @@ public class AuthActivity extends AppCompatActivity {
         phoneNumber = (EditText) findViewById(R.id.phoneNumberEditText);
         otpText = (EditText) findViewById(R.id.otpText);
 
-         mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
         mphone = PhoneAuthProvider.getInstance();
 
         sendOTP.setOnClickListener(new View.OnClickListener() {
@@ -57,12 +61,20 @@ public class AuthActivity extends AppCompatActivity {
         mcallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
             @Override
             public void onVerificationCompleted(PhoneAuthCredential phoneAuthCredential) {
-
+                    signInWithPhoneAuthCredential(phoneAuthCredential);
             }
 
             @Override
             public void onVerificationFailed(FirebaseException e) {
                 e.printStackTrace();
+            }
+
+            @Override
+            public void onCodeSent(String s, PhoneAuthProvider.ForceResendingToken forceResendingToken) {
+                mverificationID = s;
+                resendingToken = forceResendingToken;
+                mcodeLayout.setVisibility(View.VISIBLE);
+                sendOTP.setText("Verify Code");
             }
         };
     }

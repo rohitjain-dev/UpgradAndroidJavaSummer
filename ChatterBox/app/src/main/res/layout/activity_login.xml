@@ -1,16 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/chatterboxbackground"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome to ChatterBox Login"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="299dp" />
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/lck"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:text="Chatter Box"
+            android:fontFamily="cursive"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTitle"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#95D3D3D3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/enterNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/your_name"
+                android:textAlignment="center"
+                android:textColor="@color/textcolornew"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="textPersonName|text|textCapSentences"
+                android:singleLine="true"
+                android:textSize="24sp"
+                />
+            <TextView
+                android:id="@+id/enterMobileNumberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/your_number"
+                android:textAlignment="center"
+                android:textColor="@color/textcolornew"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_showFullName="true"
+                app:ccp_showNameCode="false"
+                app:ccp_showPhoneCode="true"/>
+            <EditText
+                android:id="@+id/mobileNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textSize="24sp"
+                />
+
+            <Button
+                android:id="@+id/continueButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/continue_button"
+                android:background="@color/colorAccent"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

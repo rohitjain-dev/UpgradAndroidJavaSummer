@@ -30,7 +30,8 @@
         android:padding="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="invisible">
         <ImageView
             android:src="@drawable/ic_lock_black_24dp"
             android:layout_width="wrap_content"
